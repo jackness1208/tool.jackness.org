@@ -1,0 +1,97 @@
+/*
+* Copyright 2012, jackness.org
+* Creator: jackNEss Lau
+* $Author: liudaojie $
+* $Date: 2013-01-26 16:15:29 +0800 (周六, 26 一月 2013) $
+*/
+
+@charset "utf-8";
+
+/* reset
+--------------------------------------------------*/
+html{ -webkit-text-size-adjust:none;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+body{ font:12px/1.5 Arial,\5b8b\4f53, Verdana;}
+h1,h2,h3,h4,h5,h6,p,a{ font-size:100%;}
+ul,ol,li{ list-style:none;}
+table{ border-collapse:collapse; border-style:none;}
+button{ border:0 none; padding:0; cursor:pointer;}
+iframe,embed{ display:block}
+img{ border:0;}
+input,select,img{ vertical-align:middle;}
+textarea{ resize:vertical;}
+a{ outline:0; text-decoration:none;}
+cite{font-style:normal;}
+.clear { clear:both; display:block; font-size:0; line-height:0}
+.clearfix {zoom:1;}
+.clearfix:after { display:block; clear:both; content:"."; visibility:hidden; height:0; font-size:0;}
+
+.top10{margin-top:10px;}
+.top20{margin-top:20px;}
+.bottom10{margin-bottom:10px;}
+.bottom20{margin-bottom:20px;}
+
+/* skin
+--------------------------------------------------*/
+.tool_logo,
+.tool_slide_btn i{ background-image: url(images/tool_sprite.png?201502101256)}
+.tool_bodyarea{background-image:url(images/tool_bg.jpg?201502101256);}
+
+/* page
+--------------------------------------------------*/
+.tool_html{ overflow:hidden; height:100%; width:100%;}
+.tool_body{ overflow:hidden; height:100%; width:100%;}
+.tool_bodyarea{ overflow:hidden; height:100%; width:100%; background-repeat:no-repeat; background-position:left bottom; background-color:#000;}
+.tool_side{ position:relative; float:left; width: 220px; background:#000; _margin-right:-3px; padding-top:85px; -webkit-transition:0.2s; -moz-transition:0.2s; -o-transition:0.2s; -ms-transition:0.2s; transition:0.2s;}
+.tool_logo{ position:absolute; display: block; left:10px; top:15px; width:0; height:48px; padding-left:200px; font-size:0; background-position:0 0; overflow:hidden;}
+.tool_main{ overflow: auto; height:100%; background:#fff;}
+.tool_nav{ padding-left:25px;}
+.tool_nav ul{ display:block;}
+.tool_nav ul li{ display:block; vertical-align:bottom; zoom:1; margin-bottom:2px;}
+.tool_nav ul li a{display:block; padding:3px 8px; color:#fff; font-size: 14px; border-radius: 3px 0 0 3px;  -webkit-transition:0.2s; -moz-transition:0.2s; -o-transition:0.2s; -ms-transition:0.2s; transition:0.2s;}
+.tool_nav ul li a:hover{ background:#666;}
+.tool_nav ul li.cur a,
+.tool_nav ul li.cur a:hover{ background:#fff; color:#474747;}
+
+.tool_slide_btn{ position:absolute; z-index: 5; display:block; left:213px; top:0; height:100%; width:7px; overflow:hidden; -webkit-transition:0.2s; -moz-transition:0.2s; -o-transition:0.2s; -ms-transition:0.2s; transition:0.2s;}
+.tool_slide_btn span{ position:absolute; left:0; top:50%; height:38px; margin-top:-20px; width:6px; background:#fff; cursor: pointer; border: 1px solid #0b1715; border-right: none;}
+.tool_slide_btn i{ position:absolute; left:3px; top:50%; margin-top:-3px; display:block; width:3px; height:5px; font-size:0; overflow: hidden; background-position:0 -75px; cursor: pointer;}
+
+
+.tool_bodyarea_hideslide{}
+.tool_bodyarea_hideslide .tool_side{ margin-left:-213px;}
+.tool_bodyarea_hideslide .tool_slide_btn{ left:0px;}
+.tool_bodyarea_hideslide .tool_slide_btn i{ background-position: -25px -75px}
+
+.tool_frame{ width:100%; height:100%; overflow-y:scroll;}
+
+.tool_ins_tl{ background:#555; color:#eee; padding:5px 8px; font-size:14px; font-family: Microsoft yahei, simsun, sans-serif;}
+.tool_ins_bodyarea{ padding:20px;}
+
+/* 0 - 719 分辨率 */
+@media all and (max-width:719px){
+
+.tool_html{ -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; font-size:  100%; padding-top: 2.5em; height:auto;  overflow: auto;}
+.tool_logo{ left:0.8em; top:50%; background-size:100%; width:0; padding-left:120px; height:28px; margin-top:-14px; font-size: 1em; }
+.tool_body{ font-size:inherit; height:auto; overflow: auto;}
+.tool_bodyarea{ height:auto;}
+.tool_main{ height:auto; }
+.tool_side{ position: absolute; left:0; top:0; width:100%; height:2.5em; padding-top:0;}
+.tool_nav{ position: absolute; left:0; top:2.5em; width:100%; padding-left:0; background: rgba(0,0,0,0.8); display:none; opacity:0; -webkit-transition:0.2s; -moz-transition:0.2s; -o-transition:0.2s; -ms-transition:0.2s; transition:0.2s; overflow-y:auto;}
+
+.tool_nav ul li a{ border-radius: 0;}
+.tool_nav ul li.cur a,
+.tool_nav ul li.cur a:hover{ background:#4fdddd; color:#fff;}
+
+
+.tool_slide_btn{ position: absolute; left:auto; right:0; top:0; height:2.5em; width:3.2em; background:none;}
+.tool_slide_btn span{ position:absolute; left:20%; top:50%; width:60%; height:0.4em; margin-top:-0.25em; background:#1dafcd; border:none;}
+.tool_slide_btn span:before{ content:' '; position: absolute; left: 0; top:-0.5em; width:100%; height:100%; background:#1dafcd;}
+.tool_slide_btn span:after{ content:' '; position: absolute; left: 0; bottom:-0.5em; width:100%; height:100%; background:#1dafcd;}
+.tool_slide_btn i{ display: none;}
+
+.tool_bodyarea_hideslide{}
+.tool_bodyarea_hideslide .tool_side{ margin-left:0; }
+.tool_bodyarea_hideslide .tool_nav{  display: block; opacity: 1;}
+.tool_bodyarea_hideslide .tool_slide_btn{ left: auto; }
+}
