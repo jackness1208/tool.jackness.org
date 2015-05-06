@@ -1,5 +1,5 @@
 {% require $id="resource/base.css" %}
-<div class="main">
+<div class="p-qrcode-main">
     <div class="block">
         <div class="left">
             <div class="row">
@@ -352,5 +352,5 @@
 <div id="apiText" class="hide"></div>
 
 {% script %}
-require('p-qrcode.js');
+require('p-qrcode.js')();
 {% endscript %}

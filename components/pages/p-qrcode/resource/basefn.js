@@ -136,3 +136,16 @@ function defalutText(e, t) {
 	})
 }
 
+module.exports = {
+	generate: generate,
+	Mode_text: Mode_text,
+	Mode_weixin: Mode_weixin,
+	Mode_telephone: Mode_telephone,
+	Mode_sms: Mode_sms,
+	Mode_card: Mode_card,
+	Mode_mail: Mode_mail,
+	Mode_wifi: Mode_wifi,
+	countSize: countSize,
+	countSize: countSize,
+	defalutText: defalutText
+};

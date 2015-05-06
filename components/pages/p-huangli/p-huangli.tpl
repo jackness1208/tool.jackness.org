@@ -1,6 +1,6 @@
 {% require $id='css/huangli.css' %}
 	
-<div class="container">
+<div class="p-huangli-container">
 	<div class="date">
 	</div>
 	<div class="good">

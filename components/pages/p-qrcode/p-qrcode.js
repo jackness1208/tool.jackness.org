@@ -1,17 +1,20 @@
-require('resource/jquery-1.js?__inline');
-require('resource/iColorPicker.js?__inline');
-require('resource/public.js?__inline');
-require('resource/index.js?__inline');
-require('resource/basefn.js?__inline');
-require('resource/qrcode.js?__inline');
-require('resource/canvas.js?__inline');
-require('resource/subnav.js?__inline');
-require('resource/html5.js?__inline');
-require('resource/ie.js?__inline');
+require('resource/jquery-1.js');
+require('resource/iColorPicker.js');
+require('resource/public.js');
+require('resource/index.js');
+require('resource/basefn.js');
+require('resource/qrcode.js');
+require('resource/canvas.js');
+require('resource/subnav.js');
+require('resource/html5.js');
+require('resource/ie.js');
 
 
 module.exports = function(){
+
     var _speedMark = new Date();
+
+
 
     <!--
     defalutText($('#text_text'), '支持文本、网址和电子邮箱');

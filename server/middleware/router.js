@@ -31,6 +31,10 @@ router.get('/:page/index', function(req, res, next){
                 title:'二维码生成', 
                 id: 'qrcode',
                 current: false
+            },{
+                title:'测试', 
+                id: 'test',
+                current: false
             }
         ];
 

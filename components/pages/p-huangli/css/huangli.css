@@ -1,38 +1,41 @@
-body * {font-family:"Consolas","Microsoft Yahei", Arial, sans-serif;}
+.p-huangli-container * {font-family:"Consolas","Microsoft Yahei", Arial, sans-serif;}
 
-body {background: white; margin: 0; padding: 0; }
-.container { margin: 0 0 50px; }
-.container>.title {color: #bbb; font-weight: bold; margin-bottom: 10px; background: #555; padding: 5px 15px; }
-.adlink {text-align: center; font-size: 11pt; width:320px; }
-.adlink a {text-decoration: none; display:block; color: #666; font-weight: bold; margin-bottom: 10px; background: #eee; border: 1px solid #ddd; border-radius: 4px; padding: 10pt; margin-top: 10pt; }
-.date{font-size:17pt; font-weight: bold; line-height: 30pt; }
-.split, .clear {clear: both; height: 1px; overflow-y: hidden; }
-.good, .bad {clear: both; position: relative; }
-.bad {/*top: -1px;*/ }
-.good .title, .bad .title {float: left; width: 100px; font-weight: bold; text-align: center; font-size: 30pt; position:absolute; top:0; bottom:0; }
-.good .title>table, .bad .title>table {position:absolute; width:100%; height:100%; border:none; }
-.good .title {background: #ffee44; }
-.someday .good .title {background: #aaaaaa; }
-.bad .title {background: #ff4444; color: #fff; }
-.someday .bad .title {background: #666666; color: #fff; }
-.good .content, .bad .content {margin-left: 115px; padding-right: 10px; padding-top: 1px; font-size:15pt; }
-.someday .good {background: #dddddd; }
-.someday .bad {background: #aaaaaa; }
-.good {background: #ffffaa; }
-.bad {background: #ffddd3; }
-.content ul {list-style: none; margin:10px 0 0; padding:0; } 
-.content ul li {line-height:150%; font-size: 15pt; font-weight: bold; color: #444; } .content ul li div.description {font-size: 11pt; font-weight: normal; color: #777; line-height: 110%; margin-bottom: 10px; }
-.line-tip {font-size: 11pt; margin-top: 10px; margin-left:0; }
-.direction_value {color:#4a4; font-weight: bold; }
-.someday .direction_value {color:#888; }
-.goddes_value {color: #f87; }
-.someday .goddes_value {color: #777; }
-.comment {margin-top: 50px; font-size: 11pt;}
-.comment ul {margin-left: 0; color: #999; }
+.p-huangli-container { margin: 0 0 50px; }
+.p-huangli-container>.title {color: #bbb; font-weight: bold; margin-bottom: 10px; background: #555; padding: 5px 15px; }
+.p-huangli-container .adlink {text-align: center; font-size: 11pt; width:320px; }
+.p-huangli-container .adlink a {text-decoration: none; display:block; color: #666; font-weight: bold; margin-bottom: 10px; background: #eee; border: 1px solid #ddd; border-radius: 4px; padding: 10pt; margin-top: 10pt; }
+.p-huangli-container .date{font-size:17pt; font-weight: bold; line-height: 30pt; }
+.p-huangli-container .split,
+.p-huangli-container .clear {clear: both; height: 1px; overflow-y: hidden; }
+.p-huangli-container .good,
+.p-huangli-container  .bad {clear: both; position: relative; }
+.p-huangli-container .bad {/*top: -1px;*/ }
+.p-huangli-container .good .title,
+.p-huangli-container .bad .title {float: left; width: 100px; font-weight: bold; text-align: center; font-size: 30pt; position:absolute; top:0; bottom:0; }
+.p-huangli-container .good .title>table,
+.p-huangli-container .bad .title>table {position:absolute; width:100%; height:100%; border:none; }
+.p-huangli-container .good .title {background: #ffee44; }
+.p-huangli-container .someday .good .title {background: #aaaaaa; }
+.p-huangli-container .bad .title {background: #ff4444; color: #fff; }
+.p-huangli-container .someday .bad .title {background: #666666; color: #fff; }
+.p-huangli-container .good .content, .bad .content {margin-left: 115px; padding-right: 10px; padding-top: 1px; font-size:15pt; }
+.p-huangli-container .someday .good {background: #dddddd; }
+.p-huangli-container .someday .bad {background: #aaaaaa; }
+.p-huangli-container .good {background: #ffffaa; }
+.p-huangli-container .bad {background: #ffddd3; }
+.p-huangli-container .content ul {list-style: none; margin:10px 0 0; padding:0; } 
+.p-huangli-container .content ul li {line-height:150%; font-size: 15pt; font-weight: bold; color: #444; } .content ul li div.description {font-size: 11pt; font-weight: normal; color: #777; line-height: 110%; margin-bottom: 10px; }
+.p-huangli-container .line-tip {font-size: 11pt; margin-top: 10px; margin-left:0; }
+.p-huangli-container .direction_value {color:#4a4; font-weight: bold; }
+.p-huangli-container .someday .direction_value {color:#888; }
+.p-huangli-container .goddes_value {color: #f87; }
+.p-huangli-container .someday .goddes_value {color: #777; }
+.p-huangli-container .comment {margin-top: 50px; font-size: 11pt;}
+.p-huangli-container .comment ul {margin-left: 0; color: #999; }
 
 /* 0 - 719 分辨率 */
 @media all and (max-width:719px){
 
-.adlink{ width:auto;}
+.p-huangli-container .adlink{ width:auto;}
 
 }
