@@ -350,6 +350,13 @@
 
 <div id="apiUrl" class="hide"></div>
 <div id="apiText" class="hide"></div>
+{% require $id='/views/page/p-qrcode/js/jquery-1.js' %}
+{% require $id='/views/page/p-qrcode/js/qrcode.js' %}
+{% require $id='/views/page/p-qrcode/js/iColorPicker.js' %}
+{% require $id='/views/page/p-qrcode/js/public.js' %}
+{% require $id='/views/page/p-qrcode/js/index.js' %}
+{% require $id='/views/page/p-qrcode/js/basefn.js' %}
+{% require $id='/views/page/p-qrcode/js/canvas.js' %}
 
 {% script %}
 require('p-qrcode.js')();

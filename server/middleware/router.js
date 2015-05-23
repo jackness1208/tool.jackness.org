@@ -32,6 +32,14 @@ router.get('/:page/index', function(req, res, next){
                 id: 'qrcode',
                 current: false
             },{
+                title:'图片 base 64 转换', 
+                id: 'imgBase64',
+                current: false
+            },{
+                title:'CSS3 渐变生成器', 
+                id: 'gradient',
+                current: false
+            },{
                 title:'测试', 
                 id: 'test',
                 current: false

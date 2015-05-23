@@ -692,3 +692,6 @@ QRBitBuffer.prototype = {
         this.length++;
     }
 };
+
+
+

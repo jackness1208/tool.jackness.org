@@ -1,22 +1,6 @@
-require('resource/jquery-1.js');
-require('resource/iColorPicker.js');
-require('resource/public.js');
-require('resource/index.js');
-require('resource/basefn.js');
-require('resource/qrcode.js');
-require('resource/canvas.js');
-require('resource/subnav.js');
-require('resource/html5.js');
-require('resource/ie.js');
-
-
 module.exports = function(){
-
     var _speedMark = new Date();
-
-
-
-    <!--
+    
     defalutText($('#text_text'), '支持文本、网址和电子邮箱');
     changeWifi();
     tabfn($('#fntab li'), $('#fnbox .sub'));
@@ -30,8 +14,9 @@ module.exports = function(){
         $('#card_phone').val('');
     });
     urlselect();
-
     resetAll();
-    
-    //-->
+
+    __inline('/views/page/p-qrcode/js/subnav.js');
+    __inline('/views/page/p-qrcode/js/html5.js');
+    __inline('/views/page/p-qrcode/js/ie.js');
 };

@@ -1,0 +1,32 @@
+#base64-container textarea{ border:1px solid #bbb; color:#777; box-shadow:0 0 5px #ddd inset; resize:vertical; background-color:#F9F9F9; line-height:130%; font-size:12px; overflow-y:auto; overflow-x:hidden;}
+#base64-container input.text{ font-size:100%; color:#777; box-shadow:0 0 2px #eee inset; border:1px solid #bbb; background-color:#F9F9F9; text-indent:3px; height:22px; line-height:22px; padding:0px;}
+#base64-container textarea:focus,
+#base64-container input.text:focus{ outline:none; border-color:#888; color:#223;}
+#base64-container table{ border-collapse:collapse;}
+#base64-container td{ padding:0px;}
+
+
+#base64-container .fl{ float:left !important;}
+#base64-container .fr{ float:right !important;}
+#base64-container .btn{ background-image:url(resource/btn.png); text-decoration:none !important; height:28px; display:block; line-height:28px; *line-height:30px; overflow:hidden; cursor:pointer;color:#668; padding:0 10px; border:solid #ccc; border-width:1px 0px 1px 1px;}
+#base64-container .btn:hover{ background-position:0 -28px;}
+#base64-container .btn.blue{ background-position:0 -56px; padding:0 15px; border-color:#0044cc #0044cc #002a80; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);  color:#fff;}
+#base64-container .btn.blue:hover{ background-position:0 -84px;}
+#base64-container .btn.blue:active{ background-position:0 -112px;}
+#base64-container .btn.kok{ padding:0 5px;}
+#base64-container .btn.kok i{ display:block; width:7px; height:4px; background:url(resource/kok.png) no-repeat; margin-top:12px;}
+#base64-container .btn.last{ border-right-width:1px;}
+#base64-container .clear{ clear:both; overflow:hidden; height:1px; font-size:1px;}
+
+#base64-container .checkbox{ background:url(resource/checkbox.png) 0 6px no-repeat; display:inline-block; line-height:30px; padding-left:22px; cursor:pointer;}
+#base64-container .checkbox.selected{ background-position:0 -34px;}
+
+#base64-container{ width:720px; }
+#base64-textarea-container{ *margin-bottom:5px; margin-bottom:5px\9;}
+#base64-textarea{ width:100%; height:300px;}
+#base64-imgview{ _display:none;}
+#base64-imgview img{ max-height:300px; max-width:600px; border:1px solid #000;}
+#base64-demo h2{ font-size:110%; font-weight:normal; margin:8px 0;}
+#base64-demo .code{ border:solid 1px #eee; border-left-width:5px; background-color:#f9f9f9; line-height:30px; text-indent:10px; font-family:"Courier New", Courier, monospace; font-size:90%;}
+#base64-alert{ color:orange; margin:10px 0;}
+#base64-gotowiki{ margin-top:20px; display:inline-block;}
