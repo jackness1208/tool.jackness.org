@@ -21,6 +21,7 @@
         {% require $id="views/lib/pagelet.js" %}
         {% require $id="views/lib/md.js" %}
         {% require $id="views/lib/jns.js" %}
+        {% require $id="views/lib/jquery.js" %}
         {# 页面中执行的脚本 #}
         {% script %}
             // 监听页面点击事件，自动加载pagelet

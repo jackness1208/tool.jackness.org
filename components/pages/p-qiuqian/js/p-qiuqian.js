@@ -1,5 +1,3 @@
-require('./jquery-1.8.3.min.js?__inline');
-
 module.exports = function(){
 	
 	/*

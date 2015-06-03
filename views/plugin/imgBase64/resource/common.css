@@ -1,0 +1,54 @@
+html{overflow-y:scroll}
+body{ font:12px/180% Arial, "微软雅黑"; padding:0px; margin:0px; background-color:#f6f6f6; color:#515155;}
+a{ text-decoration:none; color:#2A2A2A; outline:none;}
+a:hover{ text-decoration:underline;}
+h1{ font-size:185%; margin:20px 0 20px 20px; color:#007FF4;}
+ul,li{ margin:0px; padding:0px; list-style:none;}
+dl,dt,dd{ margin:0px; padding:0px;}
+dt{ font-size:150%; font-weight:bold;}
+textarea{ border:1px solid #bbb; color:#777; box-shadow:0 0 5px #ddd inset; resize:vertical; background-color:#F9F9F9; line-height:130%; font-size:12px; overflow-y:auto; overflow-x:hidden;}
+input.text{ font-size:100%; color:#777; box-shadow:0 0 2px #eee inset; border:1px solid #bbb; background-color:#F9F9F9; text-indent:3px; height:22px; line-height:22px; padding:0px;}
+textarea:focus,
+input.text:focus{ outline:none; border-color:#888; color:#223;}
+table{ border-collapse:collapse;}
+td{ padding:0px;}
+#header{ height:30px; line-height:30px; background-color:#eee; margin-bottom:10px; border-bottom:1px solid #ddd; padding:0 20px;}
+#header a{ margin-right:2em; color:#335;}
+#nav{ position:fixed; _position:absolute; z-index:2; right:50px; top:50px; padding:10px;}
+#nav a{ display:block; width:80px; height:60px; float:left; margin:0 2px 2px 0; color:#fff; padding:10px 10px 0 10px; text-decoration:none;}
+#nav a:hover{ background-color:#F63 !important;}
+.fl{ float:left !important;}
+.fr{ float:right !important;}
+.btn{ background-image:url(http://static.css-js.com/tools/images/btn.png); text-decoration:none !important; height:28px; display:block; line-height:28px; *line-height:30px; overflow:hidden; cursor:pointer;color:#668; padding:0 10px; border:solid #ccc; border-width:1px 0px 1px 1px;}
+.btn:hover{ background-position:0 -28px;}
+.btn.blue{ background-position:0 -56px; padding:0 15px; border-color:#0044cc #0044cc #002a80; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);  color:#fff;}
+.btn.blue:hover{ background-position:0 -84px;}
+.btn.blue:active{ background-position:0 -112px;}
+.btn.kok{ padding:0 5px;}
+.btn.kok i{ display:block; width:7px; height:4px; background:url(http://static.css-js.com/tools/images/kok.png) no-repeat; margin-top:12px;}
+.btn.last{ border-right-width:1px;}
+.clear{ clear:both; overflow:hidden; height:1px; font-size:1px;}
+
+.checkbox{ background:url(http://static.css-js.com/tools/images/checkbox.png) 0 6px no-repeat; display:inline-block; line-height:30px; padding-left:22px; cursor:pointer;}
+.checkbox.selected{ background-position:0 -34px;}
+
+#footer{ background-color:#F1F1F1; border-top:1px solid #e9e9e9; margin-top:100px; text-align:center;}
+#footer a{ line-height:60px;}
+#footer a,
+#footer span{ margin-right:12px;}
+
+#guestbook{ margin:30px 0 10px 20px; width:500px;}
+#guestbook textarea{ width:340px; height:60px;  box-shadow:none; vertical-align:top;}
+.guestbook-box{ margin-bottom:8px;}
+.guestbook-box input{ box-shadow:none; vertical-align:middle; margin:0px; width:200px;}
+#guestbook-submit{ margin-left:36px; height:26px; line-height:26px;}
+#guestbook-vcode{ width:50px; text-indent:5px;}
+#guestbook-vcode-img{ width:50px; height:20px; vertical-align:middle; cursor:pointer;}
+#guestbook-status{margin-left:36px;}
+#guestbook-status.error{color:#F00}
+#guestbook-status.success{color:green}
+#guestbook-posts{ margin:10px auto;}
+#guestbook-posts dt{ margin:10px 0; font-size:125%; border-bottom:dotted #ddd 1px; line-height:30px;}
+#guestbook-posts dd{ margin:5px 0;}
+#guestbook-posts dd .name{ margin-right:5px; color:#06c;}
+#guestbook-posts dd .time{ color:#bbb;}
