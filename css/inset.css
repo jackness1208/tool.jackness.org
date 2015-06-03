@@ -1,0 +1,37 @@
+/*
+* Copyright 2012, jackness.org
+* Creator: jackNEss Lau
+* $Author: liudaojie $
+* $Date: 2013-01-26 16:15:29 +0800 (周六, 26 一月 2013) $
+*/
+
+@charset "utf-8";
+
+/* reset
+--------------------------------------------------*/
+html{ -webkit-text-size-adjust:none;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+body{ font:12px/1.5 Arial,\5b8b\4f53, Verdana;}
+h1,h2,h3,h4,h5,h6,p,a{ font-size:100%;}
+ul,ol,li{ list-style:none;}
+table{ border-collapse:collapse; border-style:none;}
+button{ border:0 none; padding:0; cursor:pointer;}
+iframe,embed{ display:block}
+img{ border:0;}
+input,select,img{ vertical-align:middle;}
+textarea{ resize:vertical;}
+a{ outline:0; text-decoration:none;}
+cite{font-style:normal;}
+.clear { clear:both; display:block; font-size:0; line-height:0}
+.clearfix {zoom:1;}
+.clearfix:after { display:block; clear:both; content:"."; visibility:hidden; height:0; font-size:0;}
+
+.top10{margin-top:10px;}
+.top20{margin-top:20px;}
+.bottom10{margin-bottom:10px;}
+.bottom20{margin-bottom:20px;}
+
+/* page
+----------------------------------------------------*/
+.tool_ins_tl{ background:#555; color:#eee; padding:5px 8px; font-size:14px; font-family: simsun, sans-serif;}
+.tool_ins_bodyarea{ padding:20px;}

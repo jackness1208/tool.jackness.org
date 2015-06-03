@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta name="description" content="JavaScript Eval Encode/Decode, Crack JavaScript Eval Encode - JavaScript Eval 在线加密/解密，在线编码/解码，专门解码解密eval(function(p,a,c,k,e,r){})、eval(function(p,a,c,k,e,d){})以及eval(function(h,b,j,f,g,i){})等多种编码加密的代码。在线格式化Javascript脚本、js脚本、HTML代码">
+<meta name="keywords" content="eval加密,eval解密,javascript加密,javascript解密,eval编码,eval解码,javascript编码,javascript解码,javascript格式化,html格式化,js加密,js解密,js编码,js解码,packer解密,packed解密">
+<title>JavaScript Eval Encode/Decode, Crack JavaScript Eval Encode - JavaScript Eval 在线加密/解密，在线编码/解码</title>
+<link rel="stylesheet" href="../../css/inset.css">
+<style type="text/css">
+.subtl{ font-size:14px; font-weight:normal;}
+hr {
+    border:1px solid #eee;
+}
+#loader {
+    background: none repeat scroll 0 0 #FFFFDD;
+    border: 1px solid #E3E197;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px;
+}
+</style>
+</head>
+<script type="text/javascript" src="js/code_packed.js"></script>
+<script type="text/javascript" src="js/eval_out.js"></script>
+
+<body>
+<div class="tool_ins_tl">JavaScript Eval 在线加密/解密, 编码/解码工具</div>
+<div class="tool_ins_bodyarea">
+    <h3 class="subtl">专门解码解密eval(function(p,a,c,k,e,r){})、eval(function(p,a,c,k,e,d){})以及eval(function(h,b,j,f,g,i){})等多种eval编码加密的Javascript源代码。</h3>
+    <div id="loader" style="margin: 20px; font-weight: bolder; display: none;">正在加载脚本...loading...（如果加载时间过长，请刷新页面）</div>
+    <div id="main" style="">
+        <div style="margin-top:10px;">
+
+            <table style="width: 100%">
+                <tbody><tr>
+                    <td style="width: 100%">
+                        <textarea onfocus="this.select()" id="content" name="content" cols="20" rows="15" style="width: 100%; height: 250px"></textarea>
+                    </td>
+                    <td valign="top">
+                        <div style="margin-bottom:10px">
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+            <br>
+            <script>
+    //页面级XMLHttp对象
+            var xmlhttp;
+
+            //向服务器发送信息函数
+            function getPage(pageURL) {
+                try {
+                    xmlhttp = createXMLHttp();
+                    if (xmlhttp)
+                    {
+                        xmlhttp.onreadystatechange = setPageData;
+                        xmlhttp.open('GET', pageURL);
+                        xmlhttp.send(null);
+                    }else{
+                        alert("非常抱歉，似乎您的浏览器不支持此功能");
+                    }
+                } catch(e) {
+                    alert(e.message);
+                    $("RemoteBtn").disabled=false;
+                    $("RemoteBtn").value = "获取数据";
+                }
+            }
+    //回调函数，获得从服务器回发的文档信息并显示在disp层中
+    function setPageData(){
+
+        if (xmlhttp.readyState == 0){
+            $("RemoteBtn").value = "正在准备...";
+            return;
+        } else if(xmlhttp.readyState == 1) {
+            $("RemoteBtn").value = "请求已发出...";
+            return;
+        } else if (xmlhttp.readyState == 2) {
+            $("RemoteBtn").value = "请求发送完成...";
+            return;
+        } else if (xmlhttp.readyState == 3) {
+            $("RemoteBtn").value = "正在读取数据...";
+            return;
+        } else if (xmlhttp.readyState == 4 && xmlhttp.status == 200){ 
+            $("content").innerHTML = xmlhttp.responseText;
+        } else if (xmlhttp.readyState == 4) {
+            alert("无法获取远程文件内容，状态代码：" + xmlhttp.status);
+        }
+        $("RemoteBtn").disabled=false;
+        $("RemoteBtn").value = "获取数据";
+    }
+    //创建XMLHttp对象，用于读取远程文档
+    function createXMLHttp(){  
+        if (window.XMLHttpRequest) {  
+            return(new XMLHttpRequest());  
+        }  
+        var arr_t = [  
+            'MSXML2.XMLHTTP.3.0',  
+            'MSXML2.XMLHTTP',  
+            'Microsoft.XMLHTTP'  
+                ]  
+                for(var i=0; i<arr_t.length; i++) {  
+                    try {  
+                        xmlhttp_ver = arr_t[i];  
+                        return new ActiveXObject(arr_t[i]);  
+                    }catch(e) {}  
+                }  
+        return null ;  
+    }  
+
+
+    function getRemoteData() {
+        $("RemoteBtn").disabled=true;
+        $("RemoteBtn").value = "正在读取，请稍后...";
+        getPage($("remoteFile").value);
+    }
+            </script>
+            <p style="margin-bottom:10px;padding:0;color:red">由于安全性原因下面远程获取数据可能不可使用，如果无法获取，请手动将代码贴到上面文本框中。</p>
+            <input size="50" value="http://" id="remoteFile" type="text">
+            <input id="RemoteBtn" onclick="javascript:getRemoteData();" value="获取数据" type="button">
+            <br>
+            <table style="width: 100%">
+                <tbody><tr>
+                    <td style="width: 180px">
+                        <select name="compressType" id="compressType" style="width: 100%">
+                            <option selected="selected" value="0">
+                            普通压缩方式
+                            </option>
+                            <option value="1">
+                            Dean Edwards Packer
+                            </option>
+                    </select></td>
+                    <td><input id="encode" value="加密/编码/压缩/Encode/Compress" style="width: 300px" type="button"></td>
+                </tr>
+                <tr>
+                    <td style="width: 180px">
+                        <select name="tabsize" id="tabsize" style="width: 100%">
+                            <option value="1">
+                            制表符缩进
+                            </option>
+                            <option value="2">
+                            2个空格缩进
+                            </option>
+                            <option value="4" selected="selected">
+                            4个空格缩进
+                            </option>
+                            <option value="8">
+                            8个空格缩进
+                            </option>
+                    </select></td>
+                    <td><input id="decode" value="解密/解码/格式化/Decode/Format" style="width: 300px" type="button"></td>
+                </tr>
+                <tr>
+                    <td style="width: 180px">&nbsp;</td>
+                    <td><input id="copycode" value="复制文本框内的代码/Copy Code" style="width: 300px" type="button"></td>
+                </tr>
+            </tbody></table>
+        </div>
+        <hr>
+        <div>
+            <table style="width: 100%">
+                <tbody><tr>
+                    <td style="width: 350px">
+                        <fieldset style="padding:10px">
+                            <legend>输出信息</legend>
+                            <select multiple="multiple" id="info" name="info" style="width: 350px; height: 100px">
+                            </select>
+                        </fieldset>
+                    </td>
+                    <td valign="top" style="padding:10px 0 0 10px;">
+                        <p>加密层数：<span id="deg" style="color:red">0</span> 层</p>
+                        <p>处理时间：<span id="tme" style="color:blue">0</span> 毫秒</p>
+                        <p id="errmsg" style="color:red; font-weight:bold"></p>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <hr>
+
+
+</div>
+
+</body></html>
